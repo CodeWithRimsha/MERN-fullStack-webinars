@@ -34,7 +34,7 @@ function Navbar() {
         <ExploreOutlinedIcon className="icon"/>
        <Link to="/Home">Explore</Link>
        <NaturePeopleOutlinedIcon className="icon"/>
-       <Link to="/artist">Artist</Link>
+       <Link to="/artist">Artists</Link>
        <ScatterPlotIcon className="icon"/>
        <Link to="/Category"  > Categories</Link><ExpandMoreIcon id="category"/>
        
