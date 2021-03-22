@@ -39,7 +39,7 @@ function Navbar() {
        <Link to="/Category"  > Categories</Link><ExpandMoreIcon id="category"/>
        
        <LiveHelpOutlined className="icon"/>
-       <Link to="/Help">Live Help</Link>
+       <Link to="/Help">FAQ</Link>
        <RateReviewOutlinedIcon className="icon"/>
        <Link to="Review">Review Us </Link>
    
