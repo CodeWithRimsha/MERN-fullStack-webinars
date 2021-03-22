@@ -1,38 +1,182 @@
 .App {
   text-align: center;
+  font-family: "Shippori Mincho B1", serif;
+}
+* {
+  font-family: "Shippori Mincho B1", serif;
+}
+.Navbar {
+  border-bottom: 1px solid rgb(212, 210, 210);
+}
+body {
+  margin: 0;
+  padding: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.Navbar {
+  width: 100%;
+  height: 75px;
+  font-family: Arial, Helvetica, sans-serif;
   display: flex;
-  flex-direction: column;
+  margin-right: 10px;
+}
+
+.menu {
+  flex: 40%;
+  padding-left: 30px;
+  justify-content: flex-end;
+  padding-bottom: -60px;
+  color: rgb(190, 153, 49);
+  margin-left: 0px;
+}
+
+.menu .link {
+  display: flex;
+  justify-content: left;
+  max-height: 80px;
+  align-items: center;
+  padding-top: 35px;
+  margin-right: 5px;
+  padding: auto;
+}
+.menu .link a {
+  text-decoration: none;
+  color: rgb(63, 61, 61);
+  font-size: 16px;
+  margin-left: 5px;
+  font-style: unset;
+  margin-top: 0px;
+  margin-right: 15px;
+}
+
+.UserLogin {
+  padding-left: 10px;
+
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  flex: 5px;
 }
 
-.App-link {
-  color: #61dafb;
+.login {
+  margin-top: 10px;
+  color: rgb(190, 153, 49);
+  margin-left: 10px;
+}
+.loginword {
+  margin-top: 0ch;
+  color: black;
+  margin-right: -20px;
+  font-size: 14px;
+}
+.sarea {
+  width: 100%;
+  height: 35px;
+  border: 1px solid rgb(190, 153, 49);
+  border-radius: 30px;
+  margin-top: 10px;
+}
+.searchIcon {
+  color: rgb(80, 79, 77);
+  font-size: 2px;
+  cursor: pointer;
+  margin-top: 3px;
+}
+#logo {
+  width: 240px;
+  height: 130px;
+
+  padding-top: 0ch;
+  padding-right: 5px;
+  flex: 10px;
+}
+.searchbar {
+  flex: 20%;
+  margin-left: 5px;
+
+  width: 60px;
+  height: 40px;
+
+  padding-top: 13px;
+  align-items: center;
+}
+#more {
+  display: none;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+#sinput {
+  width: 80%;
+  height: 30px;
+  border: none;
+  border-radius: 4px;
+  font-size: 15px;
+  padding-left: 10px;
+  background: transparent;
+  color: black;
+  align-items: flex-start;
+}
+
+@media only screen and (max-width: 850px) {
+  .menu .link a {
+    font-size: 11px;
   }
-  to {
-    transform: rotate(360deg);
+  .menu .link a {
+    display: none;
   }
+  .menu {
+    display: none;
+  }
+  .searchbar {
+    flex: 70%;
+  }
+
+  .UserLogin {
+    flex: 15%;
+  }
+  .UserLogin .login {
+    display: none;
+  }
+
+  .UserLogin p {
+    display: none;
+  }
+
+  #more {
+    display: flex;
+    margin-top: 25px;
+    margin-left: 5px;
+    cursor: pointer;
+  }
+  #sinput {
+    height: 25px;
+  }
+}
+
+@media (max-width: 650px) {
+  .Navbar .menu button {
+    display: "flex";
+  }
+  #logo {
+    width: 140px;
+    height: 80px;
+  }
+  .menu .link a {
+    display: "none";
+    flex-direction: row;
+  }
+}
+
+#open {
+  display: none;
+}
+
+#category {
+  margin-left: -15px;
+  cursor: pointer;
+
+  margin-right: 5px;
+  color: rgb(190, 153, 49);
+}
+
+.icon {
+  color: rgb(190, 153, 49);
 }
