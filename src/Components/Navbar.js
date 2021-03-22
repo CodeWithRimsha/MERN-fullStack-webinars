@@ -36,7 +36,7 @@ function Navbar() {
        <NaturePeopleOutlinedIcon className="icon"/>
        <Link to="/artist">Artists</Link>
        <ScatterPlotIcon className="icon"/>
-       <Link to="/Category"  > Categories</Link><ExpandMoreIcon id="category"/>
+       <Link to="/Category"  > Category</Link><ExpandMoreIcon id="category"/>
        
        <LiveHelpOutlined className="icon"/>
        <Link to="/Help">FAQ</Link>
