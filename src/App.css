@@ -52,21 +52,22 @@ body {
 .UserLogin {
   padding-left: 10px;
 
-  align-items: center;
-  justify-content: center;
+  align-items: left;
+  justify-content: left;
   flex: 5px;
 }
 
 .login {
-  margin-top: 10px;
+  margin-top: 15px;
   color: rgb(190, 153, 49);
-  margin-left: 10px;
+  margin-left: -50px;
 }
 .loginword {
-  margin-top: 0ch;
+  margin-top: 0.5ch;
   color: black;
   margin-right: -20px;
   font-size: 14px;
+  margin-left: -60px;
 }
 .sarea {
   width: 100%;
@@ -82,12 +83,13 @@ body {
   margin-top: 3px;
 }
 #logo {
-  width: 240px;
+  width: 250px;
   height: 100px;
-
+  margin-left: 25px;
   padding-top: 0ch;
   padding-right: 5px;
   flex: 10px;
+  border: none;
 }
 .searchbar {
   flex: 20%;

@@ -1,17 +1,13 @@
-* {
-  font-family: sans-serif;
-  text-align: center;
-}
-
 .bg {
   position: absolute;
   top: 0;
   left: 0;
   width: 100vw;
   height: 50vh;
-  margin-top: 90px;
+  margin-top: 83px;
   will-change: opacity;
   padding-left: 30px;
+  border-radius: 30px;
 }
 
 .slider {
@@ -50,7 +46,7 @@
 
 .slide {
   opacity: 0;
-  transition-duration: 1s ease;
+  transition-duration: 3s ease;
 }
 
 .slide.active {

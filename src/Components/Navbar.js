@@ -1,6 +1,6 @@
 import React , {useState}from 'react'
 import '../App.css'
-import logo from './newlogo.png'
+import logo from './justlogo.jpeg'
 import {BrowserRouter , Route,Switch ,Link} from 'react-router-dom';
 
 import SearchIcon from '@material-ui/icons/Search';
