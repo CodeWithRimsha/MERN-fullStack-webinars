@@ -32,7 +32,7 @@ function Navbar() {
    <div className="link">
    
         <ExploreOutlinedIcon className="icon"/>
-       <Link to="/Home">Explore</Link>
+       <Link to="/">Explore</Link>
        <NaturePeopleOutlinedIcon className="icon"/>
        <Link to="/artist">Artists</Link>
        <ScatterPlotIcon className="icon"/>
