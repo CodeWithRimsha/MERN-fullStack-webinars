@@ -1,11 +1,13 @@
+
+
+
+
+
 import React from 'react';
 import ReactDOM from 'react-dom';
 import "../node_modules/bootstrap/dist/css/bootstrap.min.css"
 import App from './App';
-import ArtistUI from './artist/ArtistUI';
-import Navbar from './Components/Navbar'
 import reportWebVitals from './reportWebVitals';
-import Artist from './artist/Artist'
 import { BrowserRouter } from 'react-router-dom';
 ReactDOM.render(
 <>

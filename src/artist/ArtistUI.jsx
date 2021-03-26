@@ -1,5 +1,5 @@
 import React from 'react'
-import Navbar from '../Components/Navbar'
+//import Navbar from '../Components/Navbar'
 import './art-style.css'
 import '../App.css'
 const ArtistUI= props=>{
