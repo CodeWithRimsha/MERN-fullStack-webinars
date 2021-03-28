@@ -10,7 +10,7 @@ const ArtistUI= props=>{
                 <img src={props.imgsrc} alt="" className="card-img-top"/>
             </div>
 
-            <div className="card-body text-dark">
+        <div className="card-body text-dark">
  <h4 className="card-title"> Artist Name </h4>
  <p className="card-text text-secondary">
      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quos voluptatum id officiis assumenda laborum enim ut, provident architecto quis exercitationem.

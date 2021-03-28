@@ -2,24 +2,26 @@
   position: absolute;
   top: 0;
   left: 0;
-  width: 100vw;
+  width: 90vw;
   height: 50vh;
-  margin-top: 83px;
+  margin-top: 80px;
   will-change: opacity;
   padding-left: 30px;
-  border-radius: 30px;
+  margin-left: 60px;
 }
 
 .slider {
   position: relative;
-  height: 100vh;
+  height: 40vh;
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 100%;
 }
 
 .image {
   border-radius: 10px;
+  width: 100%;
 }
 
 .right-arrow {
@@ -46,11 +48,11 @@
 
 .slide {
   opacity: 0;
-  transition-duration: 3s ease;
+  transition-duration: 10s ease;
 }
 
 .slide.active {
   opacity: 1;
-  transition-duration: 1s;
-  transform: scale(1.08);
+  transition-duration: 10s;
+  transform: scale(10.08);
 }

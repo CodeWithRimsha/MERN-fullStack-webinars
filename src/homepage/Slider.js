@@ -1,4 +1,4 @@
-import { render } from 'react-dom'
+
 import React, { useState, useEffect } from 'react'
 import { useTransition, animated, config } from 'react-spring'
 import './styles.css'
@@ -23,10 +23,10 @@ import './styles.css'
        url:'https://images.pexels.com/photos/5325049/pexels-photo-5325049.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500'},];
 
 
-     const Slider = () => {
+    export  const Slider = () => {
         const [index, set] = useState(0)
-         const [current, setCurrent] = useState(0);
-          const length = slides.length;
+        // const [current, setCurrent] = useState(0);
+         // const length = slides.length;
         const transitions = useTransition(slides[index], item => item.id, {
           from: { opacity: 0, transform: 'scale(1.1)' },
           enter: { opacity: 1, transform: 'scale(1)' },

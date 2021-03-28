@@ -1,0 +1,60 @@
+.top-slider {
+  border-radius: 30%;
+  border-color: 1px solid rgb(51, 50, 47);
+}
+.img-top {
+  width: 260px;
+  height: 180px;
+  border-radius: 40%;
+}
+
+.web-img {
+  width: 330px;
+  height: 180px;
+}
+.top-des {
+  margin-top: 0px;
+}
+
+.swiper-button-next {
+  color: rgb(190, 153, 49);
+  margin-top: 30px;
+  margin-left: 50px;
+}
+.swiper-button-prev {
+  color: rgb(190, 153, 49);
+  margin-top: 30px;
+  margin-right: 10px;
+}
+.swiper-pagination {
+  color: rgb(190, 153, 49);
+}
+.swiper-container {
+  color: rgb(190, 153, 49);
+}
+p {
+  margin-top: 0ch;
+  color: gray;
+}
+h5 {
+  color: rgb(36, 32, 32);
+  font-weight: bold;
+  margin-top: 5px;
+}
+.top-slider:hover {
+  border-color: rgb(59, 57, 57);
+}
+
+.slidetop {
+  height: 310px;
+  margin-top: 350px;
+  padding-left: 10px;
+  width: 70px;
+  padding-top: 10px;
+  margin-left: 20px;
+  margin-right: -20px;
+}
+.slidetop:hover {
+  background: linear-gradient(to bottom, #b4a988 0%, #fff 1%);
+  background-color: rgba(59, 57, 57);
+}

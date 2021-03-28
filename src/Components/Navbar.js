@@ -1,7 +1,7 @@
-import React , {useState}from 'react'
+import React,{useEffect} from 'react'
 import '../App.css'
 import logo from './justlogo.jpeg'
-import {BrowserRouter , Route,Switch ,Link} from 'react-router-dom';
+import {Link} from 'react-router-dom';
 
 import SearchIcon from '@material-ui/icons/Search';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
@@ -18,13 +18,13 @@ import ExploreOutlinedIcon from '@material-ui/icons/ExploreOutlined';
 
 function Navbar() {
 
-
-
-
+  
 //const [showLinks, setshowLinks] = useState(false);
 
     return (
-        <div className="Navbar">
+     
+       
+        <div className="Navbar" id="sticky">
     <img id="logo"src= {logo}alt='webinar logo'></img>
 
 
@@ -67,6 +67,7 @@ function Navbar() {
 
 
         </div>
+       
     )
 }
 

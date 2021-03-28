@@ -1,4 +1,4 @@
- import React,{Component} from 'react'
+ import React from 'react'
  import ArtistUI from './ArtistUI'
  import img1 from './image1.jpeg'
  import img4 from './image5.jpeg'
