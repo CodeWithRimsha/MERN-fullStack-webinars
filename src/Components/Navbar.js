@@ -64,9 +64,9 @@ function Navbar() {
 
 </div>
 <div className="UserLogin">
-    <AccountCircleIcon className="login"/>
+   <Link to="signin"> <AccountCircleIcon className="login"/>
     <p className='loginword'>Sign In</p>
-    <MoreVertIcon id="more"/>
+    <MoreVertIcon id="more"/></Link>
 </div>
             
  
