@@ -1,36 +1,19 @@
-.top-slider {
-  border-radius: 30%;
-  border-color: 1px solid rgb(51, 50, 47);
-}
-.img-top {
-  width: 260px;
-  height: 180px;
-  border-radius: 40%;
-}
-
-.web-img {
-  width: 330px;
-  height: 180px;
-}
-.top-des {
-  margin-top: 0px;
-}
-
 .swiper-button-next {
   color: rgb(190, 153, 49);
-  margin-top: 30px;
-  margin-left: 50px;
+
+  margin-right: -5px;
 }
 .swiper-button-prev {
   color: rgb(190, 153, 49);
-  margin-top: 30px;
-  margin-right: 10px;
 }
 .swiper-pagination {
   color: rgb(190, 153, 49);
 }
 .swiper-container {
   color: rgb(190, 153, 49);
+}
+.Swiper {
+  margin-left: 15px;
 }
 p {
   margin-top: 0ch;
@@ -45,16 +28,21 @@ h5 {
   border-color: rgb(59, 57, 57);
 }
 
-.slidetop {
-  height: 310px;
-  margin-top: 350px;
-  padding-left: 10px;
-  width: 70px;
-  padding-top: 10px;
-  margin-left: 20px;
-  margin-right: -20px;
-}
 .slidetop:hover {
   background: linear-gradient(to bottom, #b4a988 0%, #fff 1%);
   background-color: rgba(59, 57, 57);
+}
+.card {
+  width: 20rem;
+}
+@media only screen and (max-width: 850px) {
+  .card {
+    margin-left: 70px;
+  }
+}
+.t {
+  margin-top: 400px;
+}
+.swiper-slide {
+  width: auto;
 }

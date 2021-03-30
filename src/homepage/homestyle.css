@@ -1,0 +1,22 @@
+.h {
+  margin-top: 750px;
+  justify-content: center;
+  align-items: center;
+}
+.u {
+  margin-top: 50px;
+}
+.c {
+  color: rgb(190, 153, 49);
+  font-family: "Mukta", sans-serif;
+}
+p {
+  color: black;
+  font-size: 22px;
+}
+
+@media only screen and (max-width: 850px) {
+  p {
+    font-size: 15px;
+  }
+}

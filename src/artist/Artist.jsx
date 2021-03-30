@@ -5,7 +5,7 @@
  import img3 from './image3.jpeg'
  function Artist() {
      return (<>
-<h2 className="heading">  Artist to Show up Next</h2>
+
 
          <div className="container-fluid d-flex justify-content-center">
 

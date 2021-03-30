@@ -14,7 +14,7 @@ function Top() {
 
 <>
      
-           <Swiper
+           <Swiper className="Swiper"
       spaceBetween={20}
       slidesPerView={3}
      navigation
@@ -23,16 +23,29 @@ function Top() {
       onSlideChange={() => console.log('slide change')}
       onSwiper={(swiper) => console.log(swiper)}
     >
-      
-      <SwiperSlide className="slidetop"><TopSwipediv/></SwiperSlide>
-      <SwiperSlide className="slidetop"><TopSwipediv/></SwiperSlide>
-      <SwiperSlide className="slidetop"><TopSwipediv/></SwiperSlide>
-      <SwiperSlide className="slidetop"><TopSwipediv/></SwiperSlide>
-      <SwiperSlide className="slidetop"><TopSwipediv/></SwiperSlide>
-      <SwiperSlide className="slidetop"><TopSwipediv/></SwiperSlide>
-      
+      <div className="row">
+      <div className="col-md-4">
+      <SwiperSlide ><TopSwipediv/></SwiperSlide>
+      </div>
+      <div className="col-md-4">
+      <SwiperSlide ><TopSwipediv/></SwiperSlide>
+      </div>
+      <div className="col-md-4">
+      <SwiperSlide ><TopSwipediv/></SwiperSlide>
+      </div>
+      <div className="col-md-4">
+      <SwiperSlide ><TopSwipediv/></SwiperSlide>
+      </div>
+      <div className="col-md-4">
+      <SwiperSlide ><TopSwipediv/></SwiperSlide>
+      </div>
+      <div className="col-md-4">
+      <SwiperSlide ><TopSwipediv/></SwiperSlide>
+      </div>
+      </div>
       ...
     </Swiper> 
+  
        </>
     )
 }

@@ -18,13 +18,18 @@ import ExploreOutlinedIcon from '@material-ui/icons/ExploreOutlined';
 
 function Navbar() {
 
-  
+    window.addEventListener("scroll", function(){
+        var header=document.querySelector("header");
+        header.classList.toggle("sticky", window.scrollY>0);
+    })
+
+
 //const [showLinks, setshowLinks] = useState(false);
 
     return (
-     
-       
+     <header className="navbar navbar-default" data-spy="affix" data-offset-top="197">
         <div className="Navbar" id="sticky">
+       
     <img id="logo"src= {logo}alt='webinar logo'></img>
 
 
@@ -64,10 +69,10 @@ function Navbar() {
     <MoreVertIcon id="more"/>
 </div>
             
-
+ 
 
         </div>
-       
+        </header> 
     )
 }
 
