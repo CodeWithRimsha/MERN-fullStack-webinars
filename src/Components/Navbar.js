@@ -44,7 +44,7 @@ function Navbar() {
        <Link to="/Category"  > Category</Link><ExpandMoreIcon id="category"/>
        
        <LiveHelpOutlined className="icon"/>
-       <Link to="/Help">FAQ</Link>
+       <Link to="/contact">FAQ</Link>
        <RateReviewOutlinedIcon className="icon"/>
        <Link to="Review">Review Us </Link>
    
@@ -64,9 +64,9 @@ function Navbar() {
 
 </div>
 <div className="UserLogin">
-   <Link to="signin"> <AccountCircleIcon className="login"/>
-    <p className='loginword'>Sign In</p>
-    <MoreVertIcon id="more"/></Link>
+    <AccountCircleIcon className="login"/>
+  <Link to="/category"> <p className='loginword'>Sign In</p></Link> 
+    <MoreVertIcon id="more"/>
 </div>
             
  

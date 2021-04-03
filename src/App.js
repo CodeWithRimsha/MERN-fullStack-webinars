@@ -2,26 +2,28 @@
 
 
 import {Route , Switch} from "react-router-dom"
-import Artist from '/Users/apple/webinars/src/artist/Artist.jsx'
+import Artist from '/Users/apple/fyp-webinars/webinars/src/artist/Artist.jsx'
 import Navbar from "./Components/Navbar"
-import SignUp from 'src/signup/SignUp.jsx'
+//import SignIn from '/Users/apple/webinars/src/signup/SignIn.jsx'
 //import Slider from './homepage/Slider';
-import Home from './homepage/Home';
+import Home from '/Users/apple/fyp-webinars/webinars/src/homepage/Home.jsx';
 import { Container } from "react-bootstrap";
+import ContactForm from "./Contact/ContactForm";
+import Header from "./header/Header";
 
 
 function App() {
   return (
     <div className="App">
 
-    <Navbar/>
+    <Header/>
     <Container>
-  <Switch>
+   <Switch>
     <Route exact path="/" component={Home}/>
-  <Route exact path="/artist" component={Artist}/>
-  <Route exact path="/signup" component={SignUp}/>
+    <Route exact path="/artist" component={Artist}/>
+    <Route exact path="/contact" component={ContactForm}/>
    
-  </Switch>
+   </Switch>
   </Container> 
     </div>
   );

@@ -3,7 +3,7 @@ import "./SignIn.css";
 
 
 
-function SignIn()
+export default function SignIn()
 {
   return(
     <>
@@ -14,7 +14,7 @@ function SignIn()
        <div className="ContentBox">
        <div className="formBox">
 <form>
-<h2>Login</h2>
+
 {/*INPUT USERNAME*/}
   <div className="inputBox">
     <span>Username</span>
@@ -53,4 +53,3 @@ function SignIn()
 }
      
 
-export default SignIn;

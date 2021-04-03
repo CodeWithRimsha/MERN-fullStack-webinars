@@ -1,5 +1,5 @@
 import React from 'react'
-import img1 from '/Users/apple/webinars/src/homepage/o.jpeg'
+import img1 from '/Users/apple/fyp-webinars/webinars/src/homepage/o.jpeg'
 function TopSwipediv() {
     return (
        

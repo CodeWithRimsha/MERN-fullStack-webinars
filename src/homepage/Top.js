@@ -3,7 +3,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/swiper.scss';
 import SwiperCore, { Navigation, Pagination, Scrollbar, A11y } from 'swiper';
 
-import TopSwipediv from "/Users/apple/webinars/src/homepage/TopSwipediv.js"
+import TopSwipediv from "/Users/apple/fyp-webinars/webinars/src/homepage/TopSwipediv.js"
 import 'swiper/components/navigation/navigation.scss';
 import 'swiper/components/pagination/pagination.scss';
 import 'swiper/components/scrollbar/scrollbar.scss';

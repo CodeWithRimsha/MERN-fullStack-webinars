@@ -1,7 +1,7 @@
 import React from 'react'
 import {Slider} from './Slider'
 import './homestyle.css';
-import Top from "/Users/apple/webinars/src/homepage/Top.js"
+import Top from "/Users/apple/fyp-webinars/webinars/src/homepage/Top.js"
 function Home() {
     return (
    <>
