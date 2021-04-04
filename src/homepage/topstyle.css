@@ -3,6 +3,9 @@
 
   margin-right: -5px;
 }
+* {
+  font-family: "Shippori Mincho B1", serif;
+}
 .swiper-button-prev {
   color: rgb(190, 153, 49);
 }
@@ -36,8 +39,27 @@ h5 {
   width: 20rem;
 }
 @media only screen and (max-width: 850px) {
-  .card {
-    margin-left: 70px;
+  #topcard {
+    width: 10rem;
+    height: 300px;
+    margin-right: 6px;
+  }
+  #title {
+    margin: 0px;
+    font-size: 13px;
+  }
+  .card-text {
+    font-size: 12px;
+    color: black;
+  }
+  .btn {
+    width: 100px;
+    height: 40px;
+    padding: 0;
+    margin: 0px;
+  }
+  #tb {
+    font-size: 11px;
   }
 }
 .t {
@@ -45,4 +67,12 @@ h5 {
 }
 .swiper-slide {
   width: auto;
+}
+#tb {
+  border: 1px solid rgb(190, 153, 49);
+  color: rgb(190, 153, 49);
+}
+#tb:hover {
+  background-color: rgb(190, 153, 49);
+  color: white;
 }

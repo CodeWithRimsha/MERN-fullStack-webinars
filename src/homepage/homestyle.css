@@ -1,22 +1,27 @@
 .h {
-  margin-top: 750px;
+  margin-top: 550px;
   justify-content: center;
   align-items: center;
+  font-family: "Shippori Mincho B1", serif;
 }
 .u {
   margin-top: 50px;
 }
 .c {
-  color: rgb(190, 153, 49);
-  font-family: "Mukta", sans-serif;
+  color: rgb(190, 153, 49, 0.5);
+  font-family: "Shippori Mincho B1", serif;
 }
 p {
   color: black;
-  font-size: 22px;
+  font-size: 17px;
+  font-family: "Shippori Mincho B1", serif;
 }
 
 @media only screen and (max-width: 850px) {
   p {
     font-size: 15px;
   }
+}
+* {
+  font-family: "Shippori Mincho B1", serif;
 }
