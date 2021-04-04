@@ -11,6 +11,7 @@ import { Container } from "react-bootstrap";
 import ContactForm from "./Contact/ContactForm";
 import Header from "./header/Header";
 import SignUp from "./organizer/SignUp";
+import './App.css'
 
 
 function App() {

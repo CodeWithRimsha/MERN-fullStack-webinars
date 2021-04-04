@@ -1,0 +1,158 @@
+.main {
+  width: 70%;
+  height: 100vh;
+  display: flex;
+}
+body {
+  height: 100%;
+}
+* {
+  font-family: "Shippori Mincho B1", serif;
+}
+.form-inputs {
+  margin-left: 200px;
+}
+.form-inputs p {
+  color: red;
+  font-size: 9px;
+  margin-left: 470px;
+  margin-top: -30px;
+}
+
+.sideview {
+  flex: 40%;
+  margin-top: 80px;
+  margin-left: 20%;
+}
+.form-content-right {
+  flex: 50%;
+
+  height: 70%;
+  margin-top: 200px;
+  justify-content: center;
+}
+
+.form {
+  -webkit-box-shadow: 3px 3px 5px 6px #ccc; /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
+  -moz-box-shadow: 3px 3px 5px 6px #ccc; /* Firefox 3.5 - 3.6 */
+  box-shadow: 3px 3px 5px 6px #ccc; /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */
+  height: 80vh;
+  margin-top: 10px;
+  justify-content: center;
+  width: 70%;
+  border-radius: 5%;
+  padding-top: 10px;
+}
+input[type="text"] {
+  border: none;
+  border-bottom: 1px solid rgb(10, 10, 10);
+  width: 300px;
+  margin-left: 10px;
+}
+input[type="email"] {
+  border: none;
+  border-bottom: 1px solid rgb(10, 10, 10);
+  margin-left: 10px;
+  width: 300px;
+}
+input[type="password"] {
+  border: none;
+  border-bottom: 1px solid rgb(10, 10, 10);
+  margin-left: 10px;
+  width: 300px;
+}
+input {
+  font-size: 14px;
+}
+.form-input-btn {
+  margin-left: 180px;
+}
+.icon {
+  color: rgba(190, 153, 49, 0.4);
+}
+.form-input-login {
+  margin-left: 160px;
+}
+img {
+  margin-top: 8px;
+}
+h5 {
+  color: rgba(190, 153, 49);
+  font-family: "Open Sans", sans-serif;
+}
+
+input[type="radio"]:clicked {
+  color: rgba(190, 153, 49);
+}
+.e-radio:checked + .e-success::after {
+  /* csslint allow: adjoining-classes */
+  background-color: #689f38;
+  border-color: #689f38;
+}
+@media only screen and (max-width: 750px) {
+  * {
+    align-items: left;
+  }
+  .sideview {
+    display: none;
+  }
+  .icon {
+    margin-left: 0%;
+  }
+  .form {
+    height: auto;
+    margin-top: 50px;
+  }
+  .form > input {
+    margin-left: 0px;
+  }
+  .form-inputs {
+    margin: 0px;
+  }
+  .form-input-login {
+    margin-left: 0px;
+  }
+  input[type="radio"] {
+  }
+  #btn {
+    height: 10px;
+    font-size: unset;
+    padding-top: 0px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+  }
+}
+@media only screen and (max-width: 850px) {
+  * {
+    align-items: left;
+  }
+  .sideview {
+    display: none;
+  }
+  .icon {
+    margin-left: 0%;
+  }
+  .form {
+    height: auto;
+    margin-top: 50px;
+  }
+  .form > input {
+    margin-left: 0px;
+  }
+  .form-inputs {
+    margin: 0px;
+  }
+  .form-input-login {
+    margin-left: 0px;
+  }
+  input[type="radio"] {
+  }
+  #btn {
+    height: 10px;
+    font-size: unset;
+    padding-top: 0px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    align-self: center;
+  }
+}

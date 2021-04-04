@@ -5,21 +5,21 @@ export default function validateInfo(values) {
     if (!values.name.trim()) {
       errors.name = 'name required';
     } else if (!/^[A-Za-z]+/.test(values.name.trim())) {
-        errors.name = 'Enter a valid name';}
+        errors.name = 'invalid';}
 
 
         if(!values.username.trim()){
             errors.name="User Name Required";
 
-        }else if (!/^[A-Za-z]+/.test(values.username.trim())) {
-            errors.username = 'Enter a valid name';}
+        }//else if (!/^[A-Za-z]+/.test(values.username.trim())) {
+          //  errors.username = 'Enter a valid name';}
 
 
             //for email
             if (!values.email) {
                 errors.email = 'Email required';
               } else if (!/\S+@\S+\.\S+/.test(values.email)) {
-                errors.email = 'Email address is invalid';
+                errors.email = ' invalid';
               }
 
 
@@ -39,14 +39,14 @@ export default function validateInfo(values) {
               if(!values.phoneno){
                   errors.phoneno="Enter your phone number"
               }else if(!phone.test(values.phone)){
-                  errors.phoneno="Valid Phone No only"
+                  errors.phoneno="Valid"
               }
 
               if(!values.profession){
-                  errors.profession="Enter your Profession"
-              }else if (!/^[A-Za-z]+/.test(values.profession.trim())) {
-                errors.profession = 'Text Only';
-            }
+                  errors.profession='Enter your Profession'
+              }//else if (!/^[A-Za-z]+/.test(values.profession.trim())) {
+               // errors.profession = 'Text Only';
+            //}
 
             if(!values.interest){
                 errors.profession="Please select one"

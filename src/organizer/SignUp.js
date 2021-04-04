@@ -8,18 +8,39 @@ import PhoneIcon from '@material-ui/icons/Phone';
 import useForm from './useForm'
 import { CastForEducation } from '@material-ui/icons';
 import validate from './ValidateForm';
+import './signup.css'
+//import './new.css'
+import sideimg from '/Users/apple/fyp-webinars/webinars/src/organizer/sideimg.png'
+import '/Users/apple/fyp-webinars/webinars/src/header/bootstrap.min.css'
 
+
+/*function ChangeColor() {
+    var lableText = document.getElementById('rad2');
+    lableText.style.color = "red";
+}*/
 function SignUp() {
     const { handleChange, handleSubmit, values, errors } = useForm(validate);
       
-    return (
+    return (<>
+<div className="main">
+<div className="sideview">
+    <h5>Organizer Registration</h5>
+    <img src={sideimg} alt="image"></img>
+  { /* <p>join as organizer to share your experience with people</p>*/}
+   
+</div>
+
+
+
+
         <div className="form-content-right">
-            <form className="form" onSubmit={handleSubmit}>
-                <h1>Be the part of Webinars and join today! Create the account by filling out the information</h1>
+        <form className="form" onSubmit={handleSubmit}>
+     
+                
                 <div className="form-inputs">
                     <label htmlFor="name"
                     className="form-label">
-                        <DnsIcon/>
+                        <DnsIcon className="icon"/>
                     </label>
                         <input
                         type="text"
@@ -38,7 +59,7 @@ function SignUp() {
                 <div className="form-inputs">
                     <label htmlFor="username"
                     className="form-label">
-                        <FaceIcon/>
+                        <FaceIcon className="icon"/>
                     </label>
                         <input
                         type="text"
@@ -54,7 +75,7 @@ function SignUp() {
                 <div className="form-inputs">
                     <label htmlFor="email"
                     className="form-label">
-                        <EmailIcon/>
+                        <EmailIcon className="icon"/>
                     </label>
                         <input
                         type="email"
@@ -72,7 +93,7 @@ function SignUp() {
                 <div className="form-inputs">
                     <label htmlFor="password"
                     className="form-label">
-                        <LockIcon/>
+                        <LockIcon className="icon"/>
                     </label>
                         <input
                         type="password"
@@ -89,7 +110,7 @@ function SignUp() {
                 <div className="form-inputs">
                     <label htmlFor="confirmpassword"
                     className="form-label">
-                        <LockIcon/>
+                        <LockIcon className="icon"/>
                     </label>
                         <input
                         type="password"
@@ -110,10 +131,10 @@ function SignUp() {
                 <div className="form-inputs">
                     <label htmlFor="phoneno"
                     className="form-label">
-                        <PhoneIcon/>
+                        <PhoneIcon className="icon"/>
                     </label>
                         <input
-                        type="Numeric"
+                        type="text"
                         name="phoneNo"
                         className="form-input"
                         placeholder="Enter Your Phone Number"
@@ -125,36 +146,38 @@ function SignUp() {
                    <div className="form-inputs">
                     <label htmlFor=""
                     className="form-label">
-                        <GroupWorkIcon/>
+                        <GroupWorkIcon className="icon"/>
                     </label>
                         <input
-                        type="Number"
+                        type="text"
                         name="profession"
                         className="form-input"
                         placeholder="Enter Your Profession"
                         value={values.profession}
                         onChange={handleChange}
+                        
                         />
                          {errors.profession && <p> {errors.profession}</p>}
                         
                    </div>
 
 
+  <br></br>
 
-
-                <div className="form-radio">
+                <div className="form-inputs">
                     <label htmlFor="radio"
                     className="form-label">
-               Your Interest : 
-                    </label>
+           
+                    </label>  &nbsp;
                         <input
                         type="radio"
                         name="interest"
                         className="form-radio"
                         value="Education"
+                    
                       />
                 <i class="fas fa-book-reader"></i>   Education
-
+                &nbsp;
 
                         <input
                         type="radio"
@@ -164,7 +187,7 @@ function SignUp() {
                       />
                     <i class="fas fa-pray"></i>     Religious
 
-
+                    &nbsp;
                         <input
                         type="radio"
                         name="interest"
@@ -172,27 +195,30 @@ function SignUp() {
                         value="Motivational"
                       />
                    <i class="fas fa-microphone"></i>  Motivational
-
+                   &nbsp;
                  <input
                         type="radio"
                         name="interest"
                         className="form-radio"
                         value="Entertainment"
                       />
-                       <i class="fas fa-icons"></i>    Entertainment 
+                        <i class="fas fa-icons"></i>    Entertainment 
 
-                       {errors.interest && <p> {errors.interest}</p>}
+                     
                    
                 </div>
-
-                <button className="form-input-btn" type="submit"> Sign Up </button>
+                {errors.interest && <p> {errors.interest}</p>}
+              
+                <button className="form-input-btn" type="submit" id="btn"> Sign Up </button>
                 <span className="form-input-login">
                     Already have an account? <a href="/oragnizerSignIn">Sign In</a>
                 </span>
-                
-            </form>
             
+            </form>
+          
         </div>
+        </div>
+        </>
     )
 }
 

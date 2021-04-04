@@ -1,13 +1,15 @@
 import React from 'react'
 import '/Users/apple/fyp-webinars/webinars/src/header/bootstrap.min.css';
 import {Navbar , Nav , NavDropdown ,Container ,Form , FormControl , Button} from 'react-bootstrap'
+import MicIcon from '@material-ui/icons/Mic';
 
+import SearchIcon from '@material-ui/icons/Search';
 const Header = () => {
     return (
        <>
   <Navbar bg="light" expand="lg"  collapseOnselect>
   <Container>
-  <Navbar.Brand className="appname" href="#home">WEBINARS PK</Navbar.Brand>
+  <Navbar.Brand className="appname" href="/">WEBINARS PK</Navbar.Brand>
   
      {/*RIGHT SIDE NAVBAR LINKS */}
   <Navbar.Toggle aria-controls="basic-navbar-nav" />
@@ -57,6 +59,20 @@ const Header = () => {
         </Nav>
         </Navbar.Collapse>
         {/*RIGHT SIDE END*/}
+
+        <div class="searchbar">
+    <div className="sarea">
+<input type="text" placeholder="search here.." id="sinput"/>
+
+<MicIcon className="searchIcon" />
+<SearchIcon className="searchIcon"/>
+</div>
+
+</div>
+
+
+
+
 
          {/*LEFT SIDE*/}
          {/*DROP DOWM JOIN AS*/}

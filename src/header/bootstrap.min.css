@@ -2257,6 +2257,7 @@ textarea.form-control.is-invalid {
   padding-right: calc(1.5em + 1rem);
   background-position: top calc(0.375em + 0.25rem) right calc(0.375em + 0.25rem);
 }
+
 .custom-select.is-invalid,
 .was-validated .custom-select:invalid {
   border-color: #d9534f;
@@ -5712,6 +5713,7 @@ a.close.disabled {
     max-width: 300px;
   }
 }
+
 @media (min-width: 992px) {
   .modal-lg,
   .modal-xl {

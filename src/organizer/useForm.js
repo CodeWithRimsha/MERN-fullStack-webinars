@@ -14,6 +14,7 @@ const useForm = (callback, validate) => {
 
   });
   const [errors, setErrors] = useState({});
+  const [isSubmitting, setIsSubmitting] = useState(false);
   //const [isSubmitting, setIsSubmitting] = useState(false);
 
   const handleChange = e => {
@@ -28,7 +29,7 @@ const useForm = (callback, validate) => {
     e.preventDefault();
 setErrors(validateInfo(values))
     //setErrors(validate(values));
-    //setIsSubmitting(true);
+    setIsSubmitting(true);
   };
 
   //useEffect(
