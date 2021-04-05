@@ -15,6 +15,7 @@ import './App.css'
 import SignIn from "./organizer/SignIn";
 //import {audienceSignIn} from '/Users/apple/fyp-webinars/webinars/src/audience/audienceSignIn.js'
 import audienceSignIn from './audience/audienceSignIn.js'
+import audienceSignUp from "./audience/audienceSignUp";
 function App() {
   return (
     <div className="App">
@@ -28,7 +29,8 @@ function App() {
     <Route exact path="/contact" component={ContactForm}/>
     <Route exact path="/organizerSignUp" component={SignUp}/>
     <Route exact path="/organizerSignIn" component={SignIn}/>
-    <Route exact path="/audienceSignIn" component={audienceSignIn}/>
+    <Route exact path="/audienceSignIn" component={audienceSignIn} />
+    <Route exact path="/audienceSignUp" component={audienceSignUp}/>
    
    </Switch>
    

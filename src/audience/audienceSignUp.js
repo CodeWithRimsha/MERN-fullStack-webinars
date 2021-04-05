@@ -5,12 +5,12 @@ import FaceIcon from '@material-ui/icons/Face';
 import LockIcon from '@material-ui/icons/Lock';
 import GroupWorkIcon from '@material-ui/icons/GroupWork';
 import PhoneIcon from '@material-ui/icons/Phone';
-import useForm from './useForm'
-import { CastForEducation } from '@material-ui/icons';
-import validate from './ValidateForm';
-import './signup.css'
+//import UseForm from '/Users/apple/fyp-webinars/webinars/src/organizer/useForm.js'
+//import { CastForEducation } from '@material-ui/icons';
+//import validate from '/Users/apple/fyp-webinars/webinars/src/audience/validateForm.js';
+import '/Users/apple/fyp-webinars/webinars/src/organizer/signup.css'
 //import './new.css'
-import sideimg from '/Users/apple/fyp-webinars/webinars/src/organizer/sideimg.png'
+import sideimg from '/Users/apple/fyp-webinars/webinars/src/audience/image.jpeg'
 import '/Users/apple/fyp-webinars/webinars/src/header/bootstrap.min.css'
 
 
@@ -18,14 +18,14 @@ import '/Users/apple/fyp-webinars/webinars/src/header/bootstrap.min.css'
     var lableText = document.getElementById('rad2');
     lableText.style.color = "red";
 }*/
-function SignUp() {
-    const { handleChange, handleSubmit, values, errors } = useForm(validate);
+function audienceSignUp() {
+   // const { handleChange, handleSubmit, values, errors } = useForm(validate);
       
     return (<>
 <div className="main">
 <div className="sideview">
-    <h5>JOIN WEBINARS</h5>
-    <img src={sideimg} alt="image" id="imgcss"></img>
+    <h5>Register yourself! </h5>
+    <img src={sideimg} alt="image" id="imgstyle"></img>
   { /* <p>join as organizer to share your experience with people</p>*/}
    
 </div>
@@ -34,10 +34,10 @@ function SignUp() {
 
 
         <div className="form-content-right" id="sigup">
-        <form className="form" onSubmit={handleSubmit} >
+        <form className="form"  >
      
                 
-                <div className="form-inputs">
+                <div className="form-inputs" id="f">
                     <label htmlFor="name"
                     className="form-label">
                         <DnsIcon className="icon"/>
@@ -47,16 +47,16 @@ function SignUp() {
                         name="name"
                         className="form-input"
                         placeholder="Enter Your Name"
-                        value={values.name}
-                        onChange={handleChange}
+                       // value={values.name}
+                       // onChange={handleChange}
 
                         />
-                        {errors.name && <p> {errors.name}</p>}
+                        {/*errors.name && <p> {errors.name}</p>*/}
 
                     
                 </div>
 
-                <div className="form-inputs">
+                <div className="form-inputs" id="f">
                     <label htmlFor="username"
                     className="form-label">
                         <FaceIcon className="icon"/>
@@ -66,13 +66,13 @@ function SignUp() {
                         name="username"
                         className="form-input"
                         placeholder="Enter Your User Name"
-                        value={values.username}
-                        onChange={handleChange}
+                       // value={values.username}
+                       // onChange={handleChange}
                         />
-                             {errors.username && <p> {errors.username}</p>}
+                             {/*errors.username && <p> {errors.username}</p>*/}
                 </div>
 
-                <div className="form-inputs">
+                <div className="form-inputs" id="f">
                     <label htmlFor="email"
                     className="form-label">
                         <EmailIcon className="icon"/>
@@ -82,15 +82,15 @@ function SignUp() {
                         name="email"
                         className="form-input"
                         placeholder="Enter Your Email"
-                        value={values.email}
-                        onChange={handleChange}
+                       // value={values.email}
+                       // onChange={handleChange}
                         />
-                         {errors.email && <p> {errors.email}</p>}
+                         {/*errors.email && <p> {errors.email}</p>*/}
                    
                 </div>
 
 
-                <div className="form-inputs">
+                <div className="form-inputs" id="f">
                     <label htmlFor="password"
                     className="form-label">
                         <LockIcon className="icon"/>
@@ -100,14 +100,14 @@ function SignUp() {
                         name="password"
                         className="form-input"
                         placeholder="Enter Your Password"
-                        value={values.password}
-                        onChange={handleChange}
+                       // value={values.password}
+                       // onChange={handleChange}
                         />
-                         {errors.password && <p> {errors.password}</p>}
+                         {/*errors.password && <p> {errors.password}</p>*/}
                    
                 </div>
 
-                <div className="form-inputs">
+                <div className="form-inputs" id="f">
                     <label htmlFor="confirmpassword"
                     className="form-label">
                         <LockIcon className="icon"/>
@@ -117,10 +117,10 @@ function SignUp() {
                         name="confirmpassword"
                         className="form-input"
                         placeholder="Confirm your Password"
-                        value={values.confirmpassword}
-                        onChange={handleChange}
+                       // value={values.confirmpassword}
+                       // onChange={handleChange}
                         />
-                         {errors.confirmpassword && <p> {errors.confirmpassword}</p>}
+                         {/*errors.confirmpassword && <p> {errors.confirmpassword}</p>*/}
                    
                 </div>
 
@@ -128,7 +128,7 @@ function SignUp() {
 
 
 
-                <div className="form-inputs">
+                <div className="form-inputs" id="f">
                     <label htmlFor="phoneno"
                     className="form-label">
                         <PhoneIcon className="icon"/>
@@ -138,12 +138,12 @@ function SignUp() {
                         name="phoneNo"
                         className="form-input"
                         placeholder="Enter Your Phone Number"
-                        value={values.phoneno}
-                        onChange={handleChange}
+                        //value={values.phoneno}
+                        //onChange={handleChange}
                         />
-                         {errors.phoneno && <p> {errors.phoneno}</p>}
+                         {/*errors.phoneno && <p> {errors.phoneno}</p>*/}
                    </div>
-                   <div className="form-inputs">
+                   <div className="form-inputs" id="f">
                     <label htmlFor=""
                     className="form-label">
                         <GroupWorkIcon className="icon"/>
@@ -153,65 +153,21 @@ function SignUp() {
                         name="profession"
                         className="form-input"
                         placeholder="Enter Your Profession"
-                        value={values.profession}
-                        onChange={handleChange}
+                       // value={values.profession}
+                        //onChange={handleChange}
                         
                         />
-                         {errors.profession && <p> {errors.profession}</p>}
+                         {/*errors.profession && <p> {errors.profession}</p>*/}
                         
                    </div>
 
 
   <br></br>
 
-                <div className="form-inputs">
-                    <label htmlFor="radio"
-                    className="form-label">
-           
-                    </label>  &nbsp;
-                        <input
-                        type="radio"
-                        name="interest"
-                        className="form-radio"
-                        value="Education"
-                    
-                      />
-                <i class="fas fa-book-reader"></i>   Education
-                &nbsp;
-
-                        <input
-                        type="radio"
-                        name="interest"
-                        className="form-radio"
-                        value="Religious"
-                      />
-                    <i class="fas fa-pray"></i>     Religious
-
-                    &nbsp;
-                        <input
-                        type="radio"
-                        name="interest"
-                        className="form-radio"
-                        value="Motivational"
-                      />
-                   <i class="fas fa-microphone"></i>  Motivational
-                   &nbsp;
-                 <input
-                        type="radio"
-                        name="interest"
-                        className="form-radio"
-                        value="Entertainment"
-                      />
-                        <i class="fas fa-icons"></i>    Entertainment 
-
-                     
-                   
-                </div>
-                {errors.interest && <p> {errors.interest}</p>}
               
-                <button className="form-input-btn" type="submit" id="btn"> Sign Up </button>
-                <span className="form-input-login" >
-                    Already have an account? <a href="http://localhost:3000/organizerSignIn">Sign In</a>
+                <button className="form-input-btn" type="submit" id="btn1"> Sign Up </button>
+                <span className="form-input-login" id="s">
+                    Already have an account? <a href="http://localhost:3000/audienceSignIn">Sign In</a>
                 </span>
             
             </form>
@@ -222,4 +178,4 @@ function SignUp() {
     )
 }
 
-export default SignUp
+export default audienceSignUp

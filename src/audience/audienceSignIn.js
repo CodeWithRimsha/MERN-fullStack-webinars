@@ -57,7 +57,7 @@ export default function audienceSignIn() {
              
                 <button className="form-input-btn" type="submit" id="btn-signIn"> Sign In </button>
                 <span className="form-input-login" id="back">
-                    Don't have an account? <a href="http://localhost:3000/organizerSignUp">Create Now</a>
+                    Don't have an account? <a href="http://localhost:3000/audienceSignUp">Create Now</a>
                 </span>
                
 
