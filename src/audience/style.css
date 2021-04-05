@@ -1,0 +1,55 @@
+#imgsignin {
+  display: flex;
+  flex: 40%;
+  margin-left: 20px;
+  height: 60vh;
+}
+@media only screen and (max-width: 750px) {
+  #imgsignin {
+    display: none;
+  }
+  #form-inputsingin {
+    margin-left: -500px;
+  }
+  #h {
+    margin-left: -50px;
+  }
+  #btn-signIn {
+    margin-left: -80px;
+  }
+}
+@media only screen and (max-width: 850px) {
+  #imgsignin {
+    display: none;
+  }
+  #form-inputsingin {
+    margin-left: -500px;
+  }
+  #h {
+    margin-left: -50px;
+  }
+  #btn-signIn {
+    margin-left: -80px;
+  }
+}
+@media only screen and (max-width: 950px) {
+  #imgsignin {
+    display: none;
+  }
+  #form-inputsingin {
+    margin-left: -500px;
+  }
+  #h {
+    margin-left: -50px;
+  }
+  #btn-signIn {
+    margin-left: -80px;
+  }
+  #back {
+    margin-left: -60px;
+  }
+  #fp {
+    margin-left: 10px;
+    margin-right: -120px;
+  }
+}
