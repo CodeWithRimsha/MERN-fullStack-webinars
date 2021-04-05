@@ -79,11 +79,11 @@ const Header = () => {
        <Navbar.Collapse id="basic-navbar-nav">
         <Nav className="ml-auto">
         <NavDropdown  title="Join As" id="basic-nav-dropdown">
-        <NavDropdown.Item href="/organizerSignUp">
+        <NavDropdown.Item href="/organizerSignIn">
          <i className="fas fa-user"></i>
           &nbsp;
          Organizer</NavDropdown.Item>
-        <NavDropdown.Item href="#action/3.2">
+        <NavDropdown.Item href="/audienceSignIn">
          <i className="fas fa-users"></i>
           &nbsp;
         Audience</NavDropdown.Item>

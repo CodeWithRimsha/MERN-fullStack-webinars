@@ -142,6 +142,7 @@ body {
   }
   .searchbar {
     flex: 70%;
+    display: none;
   }
 
   .UserLogin {
@@ -163,6 +164,7 @@ body {
   }
   #sinput {
     height: 25px;
+    display: none;
   }
 }
 

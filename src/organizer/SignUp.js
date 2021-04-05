@@ -24,7 +24,7 @@ function SignUp() {
     return (<>
 <div className="main">
 <div className="sideview">
-    <h5>Organizer Registration</h5>
+    <h5>JOIN WEBINARS</h5>
     <img src={sideimg} alt="image"></img>
   { /* <p>join as organizer to share your experience with people</p>*/}
    
@@ -33,8 +33,8 @@ function SignUp() {
 
 
 
-        <div className="form-content-right">
-        <form className="form" onSubmit={handleSubmit}>
+        <div className="form-content-right" id="sigup">
+        <form className="form" onSubmit={handleSubmit} >
      
                 
                 <div className="form-inputs">
@@ -210,8 +210,8 @@ function SignUp() {
                 {errors.interest && <p> {errors.interest}</p>}
               
                 <button className="form-input-btn" type="submit" id="btn"> Sign Up </button>
-                <span className="form-input-login">
-                    Already have an account? <a href="/oragnizerSignIn">Sign In</a>
+                <span className="form-input-login" >
+                    Already have an account? <a href="http://localhost:3000/organizerSignIn">Sign In</a>
                 </span>
             
             </form>
