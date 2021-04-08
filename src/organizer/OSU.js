@@ -7,7 +7,13 @@ export default function OSU() {
     let name, value;
 
 
-    const [user, setUser] =useState({name: "",username:"", email:"",password:"", confirmpassword:"",phoneno:"",profession:"", dob:"", interest:""})
+    const [user, setUser] =useState(
+        {name: "",username:"", email:"",
+        password:"", confirmpassword:"",
+        phoneno:"",profession:"", dob:"",
+         interest:""})
+
+         
     
     const handleChange=(e)=>{
         console.log(e)
