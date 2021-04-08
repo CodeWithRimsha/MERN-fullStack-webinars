@@ -36,7 +36,10 @@ const Header = () => {
        <i className="fas fa-images"></i>
        &nbsp;
        Gallery</Nav.Link>
-     
+       <Nav.Link href="/about">
+       <i className="fas fa-images"></i>
+       &nbsp;
+       About</Nav.Link>
      {/*CATEGORIES DROPDOWN*/}
         <NavDropdown title="Categories" id="basic-nav-dropdown" className="ml-auto">
         <NavDropdown.Item href="#action/3.1">
@@ -59,8 +62,10 @@ const Header = () => {
         </Nav>
         </Navbar.Collapse>
         {/*RIGHT SIDE END*/}
+              {/*GALLERY NAVBAR LINKS */}
 
-        <div class="searchbar">
+
+  {/**?     <div class="searchbar">
     <div className="sarea">
 <input type="text" placeholder="search here.." id="sinput"/>
 
@@ -68,7 +73,7 @@ const Header = () => {
 <SearchIcon className="searchIcon"/>
 </div>
 
-</div>
+</div>*/}  
 
 
 

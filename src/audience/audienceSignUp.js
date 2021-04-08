@@ -8,7 +8,7 @@ import PhoneIcon from '@material-ui/icons/Phone';
 //import UseForm from '/Users/apple/fyp-webinars/webinars/src/organizer/useForm.js'
 //import { CastForEducation } from '@material-ui/icons';
 //import validate from '/Users/apple/fyp-webinars/webinars/src/audience/validateForm.js';
-import '/Users/apple/fyp-webinars/webinars/src/organizer/signup.css'
+
 //import './new.css'
 import sideimg from '/Users/apple/fyp-webinars/webinars/src/audience/image.jpeg'
 import '/Users/apple/fyp-webinars/webinars/src/header/bootstrap.min.css'
@@ -25,7 +25,7 @@ function audienceSignUp() {
 <div className="main">
 <div className="sideview">
     <h5>Register yourself! </h5>
-    <img src={sideimg} alt="image" id="imgstyle"></img>
+ {/*<img src={sideimg} alt="image" id="imgstyle"></img>*/}
   { /* <p>join as organizer to share your experience with people</p>*/}
    
 </div>

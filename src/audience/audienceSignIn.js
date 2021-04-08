@@ -11,7 +11,7 @@ export default function audienceSignIn() {
             <div>
             <h4 id="h"> Sign In Audience</h4>
         <div>
-        <img src= {pic} alt="" id="imgsignin"></img>
+      {/* <img src= {pic} alt="" id="imgsignin"></img>*/}
  
               <div className="form-content-right">
            
