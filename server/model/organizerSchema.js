@@ -5,38 +5,56 @@ const organizerSchema= new mongoose.Schema(
     {
         name:{
             type: String,
-            required: true
+            required: true,
+           // minlength: 3,
+            //maxlength: 50
         },
         username:{
             type: String,
-            required: true
+            required: true,
+          //  minlength: 5,
+          //  maxlength: 255,
+            unique: true
         },
         email:{
             type: String,
-            required: true
+            required: true,
+           // minlength: 7,
+           // maxlength: 255,
+            unique: true
         },
         password:{
             type: String,
-            required: true
+            required: true,
+          //  minlength: 5,
+           // maxlength: 1024
         },
         confirmpassword:{
             type: String,
-            required: true
+            required: true,
+          //  minlength: 5,
+          //  maxlength: 1024
         },
-        interest:{
-            type: String,
-            required: true
-        },
-       
 
         phoneno:{
             type: Number,
-            required: true
+            required: true,
+           // minlength: 11
         },
-        accountno:{
-            type: Number,
-            required: false
-        },
+
+       profession:{
+           type:  String,
+           required: true
+       },
+       dob:{
+           type: String,
+           requires: true
+       },
+    
+       interest:{
+        type: String,
+        required: true
+    },
 
         tokens:[
             {

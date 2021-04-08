@@ -46,10 +46,10 @@ router.get('/register',(req, res)=>{
 
 //now using with async await method
 router.post('/register', async(req, res)=>{
-const{name, username, email, password, confirmpassword, interest, phoneno, accountno}= req.body;
+const{name, username, email, password, confirmpassword, phoneno, profession, dob, interest}= req.body;
     
 
-if(!name||!username||!email||!password||!confirmpassword||!interest||!phoneno||!accountno)
+if(!name||!username||!email||!password||!confirmpassword||!phoneno||!profession||!dob||!interest)
 {
     return res.status(422).json({error:"Please fill all the field properly"});
 }
@@ -62,7 +62,7 @@ try{
         return res.status(422).json({error:"Password is not matching"})
     }
     else{
-    const organizerdata= new Organizerdata({name, username, email, password, confirmpassword, interest, phoneno, accountno})
+    const organizerdata= new Organizerdata({name, username, email, password, confirmpassword,phoneno, profession, dob, interest })
    // const Organizerregister= await organizerdata.save();
    await organizerdata.save();
   //if(Organizerregister){
