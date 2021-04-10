@@ -11,7 +11,9 @@ require('./db/conn');
 app.use(express.json());
 //const route= require('./router/auth');
 const router= require('./router/auth');
+
 app.use(router);
+
 
 //const organizer= require('./model/organizerSchema');
 
